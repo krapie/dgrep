@@ -5,10 +5,11 @@ Copyright © 2024 Kevin Park <krapie0314@gmail.com>
 package cmd
 
 import (
-	"fmt"
 	"os"
 
 	"github.com/spf13/cobra"
+
+	"github.com/krapie/dgrep/internal"
 )
 
 // rootCmd represents the base command when called without any subcommands
@@ -22,8 +23,7 @@ var rootCmd = &cobra.Command{
 		keyword := args[0]
 		path := args[1]
 
-		fmt.Println("keyword: ", keyword)
-		fmt.Println("path: ", path)
+		internal.Search(keyword, path)
 	},
 }
 
