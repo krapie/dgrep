@@ -18,6 +18,7 @@ func search(keyword, path string) {
 	// check if path is file or directory
 	if isFile(path) {
 		// if path is file, then search keyword in file with goroutine
+		// TODO(krapie): use worker pool to effectively perform concurrent search
 		go printKeywordInFile(keyword, path)
 	} else {
 		// if path is directory, perform

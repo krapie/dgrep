@@ -1,5 +1,8 @@
 # dgrep
 
+> [!NOTE]
+> Worker Pool Implementation will be added soon.
+
 dgrep is a advanced grep tool for searching keywords in files or directories.
 
 ## Installation
@@ -20,6 +23,15 @@ make build
 ```bash
 ./dgrep {keyword} {path}
 ```
+
+## Benchmark
+
+```bash
+time ./dgrep {keyword} {path}
+```
+
+- Basic Implementation: ...
+- Worker Pool Implementation: ...
 
 ## Reference
 
